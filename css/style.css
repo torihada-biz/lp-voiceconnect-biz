@@ -706,9 +706,9 @@ button { background: none; border: none; cursor: pointer; color: inherit; font: 
   .hamburger { display: flex; }
 
   /* Hero — show full landscape image without cropping */
-  .hero { height: 100vw; min-height: unset; }
-  .hero-bg { background-size: contain; background-position: top center; }
-  .hero-title { padding: 0 20px 28px; }
+  .hero { height: 66.7vw; min-height: unset; }
+  .hero-bg { top: 0; bottom: 0; background-size: contain; background-position: top center; }
+  .hero-title { padding: 0 20px 20px; }
   .hero-title img { width: clamp(180px, 72vw, 600px); }
   .hero-buttons { flex-wrap: wrap; gap: 12px; }
   .btn { min-width: 120px; padding: 0 20px; }
