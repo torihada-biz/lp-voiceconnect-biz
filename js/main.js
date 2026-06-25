@@ -27,7 +27,7 @@ const observer = new IntersectionObserver(entries => {
 fadeEls.forEach(el => observer.observe(el));
 
 // contact form — Formspree
-const FORMSPREE_ID = 'xykqeykg';
+const FORMSPREE_ID = 'mlgyjebk';
 
 const form = document.getElementById('contactForm');
 if (form) {
