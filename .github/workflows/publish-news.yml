@@ -1,0 +1,31 @@
+name: Publish Scheduled News
+
+on:
+  schedule:
+    # 毎時00分に実行（UTC）= JST 毎時09分
+    - cron: '0 * * * *'
+  workflow_dispatch: # GitHub上から手動実行も可能
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run publish script
+        run: python scripts/publish-news.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add news.html news-scheduled.json
+          if git diff --staged --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "news: 予約記事を公開"
+            git push
+          fi
