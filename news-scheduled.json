@@ -1,0 +1,25 @@
+[
+  {
+    "_comment": "このファイルに予約記事を追加してください。publishAt になると自動で news.html に反映されます。",
+    "_example": {
+      "id": "example-id",
+      "publishAt": "2026-07-01T10:00:00+09:00",
+      "date": "2026.07.01",
+      "title": "記事タイトル",
+      "body": "本文をここに書きます。<br>改行は &lt;br&gt; を使ってください。",
+      "images": [
+        { "src": "images/ファイル名.png", "alt": "画像の説明" }
+      ]
+    }
+  },
+  {
+    "id": "radio-pipipipi-connect",
+    "publishAt": "2026-06-29T22:00:00+09:00",
+    "date": "2026.06.29",
+    "title": "2026年7月7日 PPP Viral Entertainmentの冠ラジオ「高槻かなこと福田幹大のピピピコネクト」ON AIR開始。",
+    "body": "レーベル初の冠番組「高槻かなこと福田幹大のピピピコネクト」が、ラジオ日本（株式会社アール・エフ・ラジオ日本/FM92.4MHz・AM1422kHz）にて放送されることが決定しました。<br><br>【放送概要】<br>タイトル：高槻かなこと福田幹大のピピピコネクト<br>放送日：毎週火曜日27時30分〜28時00分（水曜日早朝3時30分〜4時00分）<br>放送局：ラジオ日本（FM92.4MHz・AM1422kHz）※radikoでも聴取可<br>MC：高槻かなこ / 福田幹大",
+    "images": [
+      { "src": "images/radio-pipipipi-connect.png", "alt": "高槻かなこと福田幹大のピピピコネクト" }
+    ]
+  }
+]
